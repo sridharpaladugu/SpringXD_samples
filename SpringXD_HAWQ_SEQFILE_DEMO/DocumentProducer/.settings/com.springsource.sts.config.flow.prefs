@@ -1,0 +1,2 @@
+//com.springsource.sts.config.flow.coordinates\:http\://www.springframework.org/schema/batch\:/DataProducer/src/main/resources/createbatch-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\n<graph>\n<element clazz\="JobModelElement" type\="job">\n<structure end\="1068" endstart\="1056" start\="618" startend\="669"/>\n<bounds height\="218" width\="152" x\="15" y\="17"/>\n</element>\n</graph>
+eclipse.preferences.version=1

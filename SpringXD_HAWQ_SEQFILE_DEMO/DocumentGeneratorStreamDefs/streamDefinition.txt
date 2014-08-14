@@ -1,0 +1,7 @@
+
+
+stream create --name generateSeqFiles --definition "trigger --fixedDelay=10 | DocumentProducerSink --dropboxLocation=/home/gpadmin/Document_Stage --recordSize=20"
+
+stream deploy generateSeqFiles
+
+stream create --name GroovyHdfsSink --definition "file --dir=/home/gpadmin/TEST_STAGE/ --pattern=**/*.bin --fixedDelay=10 --ref=true | DocumentHdfsSink --localDirectory=/home/gpadmin/Document_Stage/ --hdfsDirectory=/user/sri/hdfssink"
