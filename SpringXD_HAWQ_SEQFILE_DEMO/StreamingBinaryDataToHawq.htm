@@ -1,0 +1,1389 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns:mv="http://macVmlSchemaUri" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta name=Title content="">
+<meta name=Keywords content="">
+<meta http-equiv=Content-Type content="text/html; charset=macintosh">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<link rel=File-List href="StreamingBinaryDataToHawq_files/filelist.xml">
+<link rel=Edit-Time-Data href="StreamingBinaryDataToHawq_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Corporate User</o:Author>
+  <o:LastAuthor>Corporate User</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>14</o:TotalTime>
+  <o:Created>2014-08-14T18:47:00Z</o:Created>
+  <o:LastSaved>2014-08-14T18:47:00Z</o:LastSaved>
+  <o:Pages>4</o:Pages>
+  <o:Words>1892</o:Words>
+  <o:Characters>10790</o:Characters>
+  <o:Company>EMC Corp.</o:Company>
+  <o:Lines>89</o:Lines>
+  <o:Paragraphs>25</o:Paragraphs>
+  <o:CharactersWithSpaces>12657</o:CharactersWithSpaces>
+  <o:Version>14.0</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=dataStoreItem href="StreamingBinaryDataToHawq_files/item0001.xml"
+target=":StreamingBinaryDataToHawq_files:props0002.xml">
+<link rel=themeData href="StreamingBinaryDataToHawq_files/themedata.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>JA</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="276">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Times;
+	panose-1:2 0 5 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:"\FF2D\FF33 \660E\671D";
+	mso-font-charset:78;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1791491579 18 0 131231 0;}
+@font-face
+	{font-family:"\FF2D\FF33 \30B4\30B7\30C3\30AF";
+	mso-font-charset:78;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1791491579 18 0 131231 0;}
+@font-face
+	{font-family:"\FF2D\FF33 \30B4\30B7\30C3\30AF";
+	mso-font-charset:78;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1791491579 18 0 131231 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-520092929 1073786111 9 0 415 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1073743103 0 0 415 0;}
+@font-face
+	{font-family:"Lucida Grande";
+	panose-1:2 11 6 0 4 5 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-520090897 1342218751 0 0 447 0;}
+@font-face
+	{font-family:Monospace;
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-alt:Cambria;
+	mso-font-charset:77;
+	mso-generic-font-family:auto;
+	mso-font-format:other;
+	mso-font-pitch:auto;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Cambria;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
+	mso-style-next:Normal;
+	margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Calibri;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"\FF2D\FF33 \30B4\30B7\30C3\30AF";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#345A8A;
+	mso-themecolor:accent1;
+	mso-themeshade:181;
+	mso-font-kerning:0pt;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	mso-themecolor:hyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:purple;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:"Lucida Grande";
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Lucida Grande";
+	mso-ascii-font-family:"Lucida Grande";
+	mso-hansi-font-family:"Lucida Grande";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:Calibri;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"\FF2D\FF33 \30B4\30B7\30C3\30AF";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#345A8A;
+	mso-themecolor:accent1;
+	mso-themeshade:181;
+	font-weight:bold;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-family:Cambria;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"\FF2D\FF33 \660E\671D";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:.5in .5in .5in .5in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Cambria;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=WordSection1>
+
+<h1><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Picture_x0020_2" o:spid="_x0000_i1029" type="#_x0000_t75"
+ style='width:137pt;height:66pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="StreamingBinaryDataToHawq_files/image001.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=139 height=68
+src="StreamingBinaryDataToHawq_files/image002.png" v:shapes="Picture_x0020_2"><![endif]></span></h1>
+
+<h1 style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;margin-left:
+0in'>Streaming Binary data in HAWQ.</h1>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'>Pivotal
+offers HAWQ, SQL-on-<span class=SpellE>Hadoop</span> engine. HAWQ is designed
+as a MPP SQL processing engine optimized for analytics with full transaction
+support. HAWQ breaks complex queries into small tasks and distributes them to
+MPP query processing units for execution. The query planner, dynamic pipeline,
+leading edge interconnect, and the specific query executor optimization for
+distributed storage are designed to work seamlessly, to support highest level
+of performance and scalability. Based on <span class=SpellE>Hadoop’s</span>
+distributed storage, HAWQ has no single point of failure and supports fully
+automatic online recovery. System states are continuously monitored, therefore
+if a segment fails; it is automatically removed from the cluster. During this process,
+the system continues serving customer queries, and the segments can be added
+back to the system when necessary. To learn about HAWQ please visit <a
+href="http://www.pivotal.io/big-data/pivotal-hd">http://www.pivotal.io/big-data/pivotal-hd</a>.</p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;text-align:justify;text-justify:
+inter-ideograph'>HAWQ PXF feature let us access information from HDFS and
+access the data in ANSI SQL on all the primitive data types. PXF can query data
+from support <span class=SpellE>HBase</span>, Hive, Sequence files, <span
+class=SpellE>csv</span> files stored in HDFS. Let us examine a scenario where
+we are streaming in a sequence file in HDFS and expose the data via HAWQ
+external table. </p>
+
+<p class=MsoNormal style='margin-top:6.0pt;text-align:justify;text-justify:
+inter-ideograph'>To demonstrate the scenario Let us generate some sequence
+files, store them in HDFS and query the via HAWQ external table feature. The flow
+we are going to use is as below<span class=GramE>;</span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1028" type="#_x0000_t75" style='width:495pt;height:285pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="StreamingBinaryDataToHawq_files/image003.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=497 height=287
+src="StreamingBinaryDataToHawq_files/image004.png" v:shapes="_x0000_i1028"><![endif]></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'>As
+shown in the diagram the process is broken 3 steps<span class=GramE>;</span>
+data producer, data ingestion, query step. </p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>We are going to use <span class=SpellE>SpringXD</span> for
+data ingestion. To setup <span class=SpellE>SpringXD</span> please refer to <a
+href="http://docs.spring.io/springxd/docs/1.0.0.RELEASE/reference/html/#_install_spring_xd">http://docs.spring.io/springxd/docs/1.0.0.RELEASE/reference/html/#_install_spring_xd</a>
+to setup <span class=SpellE>SpringXD</span> in single node environment and
+configure HADOOP FS in <span class=SpellE>SpringXD</span>.</p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'>Flow
+1, usually an external source sending the files to a file store. To simulate
+the flow, I choose to use <span class=SpellE>SpringXD</span> to trigger the
+Document Generator process for a fixed interval time; which generates a
+sequence file containing a record with three fields name, type, content.<span
+style="mso-spacerun:yes">&nbsp; </span>The name and type are text type and
+content is a byte array representing the document. The file will be stored in a
+folder. The process is configured to accept the folder location and number of
+records would like to generate in a file.</p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'>Flow2
+is another <span class=SpellE>SpringXD</span> stream which uses out of box File
+polling process and a custom Sink to store files to HDFS. This process polls
+the folder for fixed interval time and if there is any new file, moves to HDFS.</p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;
+margin-left:0in'>The final step is creating an external table in HAWQ to query
+the data in client Application.</p>
+
+<p class=MsoNormal>The code for this sample can be downloaded at <a
+href="https://github.com/sridharpaladugu/SpringXD_Pivotal_hadoop/tree/master/SpringXD_HAWQ_SEQFILE_DEMO">https://github.com/sridharpaladugu/SpringXD_Pivotal_hadoop/tree/master/SpringXD_HAWQ_SEQFILE_DEMO</a></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>The Java code is in folder <span class=SpellE>DocumentProducer</span>,
+</p>
+
+<p class=MsoNormal><span class=SpellE>SpringXD</span> module definitions are in
+<span class=SpellE><span class=GramE>DocumentProdcerSink</span></span><span
+class=GramE> <span style="mso-spacerun:yes">&nbsp;</span><span class=SpellE>DocumentHdfsSink</span></span>
+folders, </p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt'>HAWQ table definition and <span
+class=SpellE>SpringXD</span> streams are in folder <span class=SpellE>DocumentGeneratorStreamDefs</span><span
+style='font-family:Calibri;mso-ascii-theme-font:major-latin;mso-fareast-font-family:
+"Times New Roman";mso-hansi-theme-font:major-latin;mso-bidi-font-family:"Times New Roman";
+color:black;background:white;mso-bidi-font-weight:bold'>.</span><span
+style='font-size:10.0pt;font-family:Times;mso-fareast-font-family:"Times New Roman";
+mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal>Clone and import the <span class=SpellE>DocumentProducer</span>
+in to Eclipse with import existing maven projects option. The code is organized
+as follows.</p>
+
+<p class=MsoNormal><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_3" o:spid="_x0000_i1027" type="#_x0000_t75" style='width:315pt;
+ height:490pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="StreamingBinaryDataToHawq_files/image005.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=317 height=492
+src="StreamingBinaryDataToHawq_files/image006.png" v:shapes="Picture_x0020_3"><![endif]></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'>The
+Document generation process flow generates preconfigured number <span
+class=SpellE>pdf</span>, excel, and image records in a sequence file. To keep
+things simple I have a Driver class which instantiate the 3 beans and generate
+number of specified document records. <span
+style="mso-spacerun:yes">&nbsp;</span>Each of the service call result in a
+Document POJO with text attributes<span style="mso-spacerun:yes">&nbsp;
+</span>‘name, type, and a <span class=GramE>byte[</span>] representing the
+document. The high level flow is as below<span class=GramE>;</span></p>
+
+<p class=MsoNormal><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_1" o:spid="_x0000_i1026" type="#_x0000_t75" style='width:540pt;
+ height:306pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="StreamingBinaryDataToHawq_files/image007.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=542 height=308
+src="StreamingBinaryDataToHawq_files/image008.png" v:shapes="Picture_x0020_1"><![endif]></span></p>
+
+<p class=MsoNormal>The service accepts two parameters <span class=SpellE>dropBoxLocation</span>
+to store the output file, and the size of the records to produce in each file.</p>
+
+<p class=MsoNormal><span style="mso-spacerun:yes">&nbsp;</span></p>
+
+<p class=MsoNormal>Run maven build for <span class=SpellE>DocumentProducer</span>
+and deploy the jar in <span class=SpellE>SpringXD</span>. Deploying to <span
+class=SpellE>springXD</span> is, copy the jar to either a configured EXT folder
+or simply dropping the jar in the folder ${SPRINGXD_<span class=GramE>HOME }</span>/<span
+class=SpellE>xd</span>/lib/. Also copy the dependent jars <span class=SpellE>itext</span>,
+<span class=SpellE>jxl</span> from maven path to <span class=SpellE><span
+class=GramE>xd</span></span> lib.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>We need to generate xml configuration for the Document
+generation sink module. For this purpose we use spring integration service
+activator.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Copy the folders <span class=SpellE>DocumentProdcerSink</span>
+and <span class=SpellE>DocumentHdfsSink</span>. <span class=GramE>to</span> <span
+style="mso-spacerun:yes">&nbsp;</span>${SPRINGXD_HOME}/<span class=SpellE>xd</span>/modules/sink.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Once we have all the pieces in place, please restart spring <span
+class=SpellE><span class=GramE>xd</span></span> and verify we have the modules
+deployed. For example;</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b><span style='font-size:10.0pt;color:#3366FF'>XD&gt;module
+info sink: <span class=SpellE>DocumentHdfsSink</span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:8.0pt;color:#3366FF;mso-bidi-font-weight:
+bold'>Information about sink module <span class=SpellE>DocumentHdfsSink</span>:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:8.0pt;color:#3366FF;mso-bidi-font-weight:
+bold'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:8.0pt;color:#3366FF;mso-bidi-font-weight:
+bold'><span style="mso-spacerun:yes">&nbsp; </span>Option Name<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>Description<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='mso-tab-count:4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Default<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Type<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:8.0pt;color:#3366FF;mso-bidi-font-weight:
+bold'><span style="mso-spacerun:yes">&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:8.0pt;color:#3366FF;mso-bidi-font-weight:
+bold'><span style="mso-spacerun:yes">&nbsp; </span><span class=SpellE><span
+class=GramE>fsUri</span></span> <span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>Hadoop</span> FS<span style="mso-spacerun:yes">&nbsp;&nbsp;
+</span>URL<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='mso-tab-count:5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>${<span
+class=SpellE>spring.hadoop.fsUri</span>}<span style="mso-spacerun:yes">&nbsp;
+</span><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>String<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:8.0pt;color:#3366FF;mso-bidi-font-weight:
+bold'><span style="mso-spacerun:yes">&nbsp; </span><span class=SpellE><span
+class=GramE>hdfsDirectory</span></span><span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>hdfs</span> file location<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>/user/<span
+class=SpellE>gpadmin</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>String<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:8.0pt;color:#3366FF;mso-bidi-font-weight:
+bold'><span style="mso-spacerun:yes">&nbsp; </span><span class=SpellE><span
+class=GramE>localDirectory</span></span><span style="mso-spacerun:yes">&nbsp;
+</span><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>location
+of the file in local file system <span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style='mso-tab-count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>/<span
+class=SpellE>tmp</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>String<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:8.0pt;color:#3366FF;mso-bidi-font-weight:
+bold'><span style="mso-spacerun:yes">&nbsp; </span><span class=SpellE><span
+class=GramE>inputType</span></span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>how
+this module should interpret messages it consumes<span
+style="mso-spacerun:yes">&nbsp; </span><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;none&gt;<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>MimeType</span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><span class=GramE><b><span
+style='font-size:10.0pt;color:#3366FF'>xd</span></b></span></span><b><span
+style='font-size:10.0pt;color:#3366FF'>:&gt;module info sink: <span
+class=SpellE>DocumentProdcerSink</span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'>Information
+about sink module <span class=SpellE>DocumentProdcerSink</span>:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'><span
+style="mso-spacerun:yes">&nbsp; </span>Option Name<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Description<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='mso-tab-count:4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Default<span
+style="mso-spacerun:yes">&nbsp; </span><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Type<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'><span
+style="mso-spacerun:yes">&nbsp; </span>---------------<span
+style="mso-spacerun:yes">&nbsp;
+</span>--------------------------------------------------------<span
+style="mso-spacerun:yes">&nbsp; </span>-------<span
+style="mso-spacerun:yes">&nbsp;
+</span>-------------------------------------------------------------------------<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'><span
+style="mso-spacerun:yes">&nbsp; </span><span class=SpellE><span class=GramE>recordSize</span></span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>number
+of records in sequence file<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>200<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Integer<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'><span
+style="mso-spacerun:yes">&nbsp; </span><span class=SpellE><span class=GramE>dropboxLocation</span></span><span
+style="mso-spacerun:yes">&nbsp; </span><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>location
+of the folder where the sequence file is stored<span
+style="mso-spacerun:yes">&nbsp; </span><span style='mso-tab-count:1'>&nbsp;&nbsp; </span><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>/<span
+class=SpellE>tmp</span><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>String<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'><span
+style="mso-spacerun:yes">&nbsp; </span><span class=SpellE><span class=GramE>inputType</span></span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>how
+this module should interpret messages it consumes<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;none&gt;<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE>MimeType</span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'>Now let us create a stream
+and deploy to generate the files. The following command create a stream module
+in <span class=SpellE>SpringXD</span>, which runs the Document generation
+process with fixed interval 0f 20 seconds.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span class=SpellE><b><span style='font-size:9.0pt;
+mso-bidi-font-family:Monospace;color:#3366FF'>Xd</span></b></span><b><span
+style='font-size:9.0pt;mso-bidi-font-family:Monospace;color:#3366FF'>&gt;stream
+create --name <span class=SpellE>generateSeqFiles</span> --definition
+&quot;trigger --<span class=SpellE>fixedDelay</span>=20 | </span></b><span
+class=SpellE><b><span style='font-size:9.0pt;color:#3366FF'>DocumentProdcerSink</span></b></span><b><span
+style='font-size:9.0pt;mso-bidi-font-family:Monospace;color:#3366FF'> --<span
+class=SpellE>dropboxLocation</span>=/home/<span class=SpellE><u>gpadmin</u></span>/TEST_STAGE
+--<span class=SpellE>recordSize</span>=10&quot;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'>Deploy the stream to <span
+class=SpellE>SpringXD</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><span class=GramE><b style='mso-bidi-font-weight:
+normal'><span style='font-size:9.0pt;color:#3366FF'>xd</span></b></span></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:9.0pt;color:#3366FF'>&gt;stream
+deploy <span class=SpellE>generateSeqFiles</span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'>After this step we expect to
+see documents getting generated in the folder “/home/<span class=SpellE>gpadmin</span>/TEST_STAGE”.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'>Since our source is up and
+streaming files, let us create a stream to store files to HDFS. Please create
+the destination folder in HDFS before this step.<o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span class=SpellE><span class=GramE><b><span
+style='font-size:9.0pt;color:#3366FF'>xd</span></b></span></span><b><span
+style='font-size:9.0pt;color:#3366FF'>:&gt;stream create --name <span
+class=SpellE>storeDocumentsToHdfs</span> --definition &quot;file --<span
+class=SpellE>dir</span>=/home/<span class=SpellE>gpadmin</span>/TEST_STAGE/
+--pattern=**/*.bin --<span class=SpellE>fixedDelay</span>=10 --ref=true | <span
+class=SpellE>DocumentHdfsSink</span> --<span class=SpellE>localDirectory</span>=/home/<span
+class=SpellE>gpadmin</span>/TEST_STAGE/ --<span class=SpellE>hdfsDirectory</span>=/user/<span
+class=SpellE>hawqtest</span>/<span class=SpellE>hdfssink</span>&quot;<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;color:#3366FF;mso-bidi-font-weight:
+bold'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal>Deploy the stream<span class=GramE>;</span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span class=SpellE><span class=GramE><b><span
+style='font-size:9.0pt;color:#3366FF'>xd</span></b></span></span><b><span
+style='font-size:9.0pt;color:#3366FF'>&gt;stream deploy <span class=SpellE>DocumentHdfsSink</span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Once the stream starts up we should see files in <span
+class=SpellE>hdfs</span> in the folder “/user/<span class=SpellE>hawqtest</span>/<span
+class=SpellE>hdfssink</span>”.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'>[<span
+class=SpellE><span class=GramE>pivhdsne:sink</span></span>]$ <span
+class=SpellE>hdfs</span> <span class=SpellE>dfs</span> -<span class=SpellE>ls</span>
+/user/<span class=SpellE>hawqtest</span>/<span class=SpellE>hdfssink</span><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'>Found 81 items<o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=SpellE><span class=GramE><span style='font-size:
+9.0pt;color:#3366FF'>drwxr</span></span></span><span style='font-size:9.0pt;
+color:#3366FF'>-<span class=SpellE>xr</span>-x<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>- <span class=SpellE>gpadmin</span>
+<span class=SpellE>hadoop</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>0 2014-08-11 23:07 /user/<span class=SpellE>hawqtest</span>/<span
+class=SpellE>hdfssink</span>/*.bin<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'>-<span
+class=SpellE><span class=GramE>rw</span></span>-r--r--<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>3 <span class=SpellE>gpadmin</span>
+<span class=SpellE>hadoop</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>36994 2014-08-11
+23:07 /user/<span class=SpellE>hawqtest</span>/<span class=SpellE>hdfssink</span>/SPXDocuments_Aug-11-2014T23-00-17.bin<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'>-<span
+class=SpellE><span class=GramE>rw</span></span>-r--r--<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>3 <span class=SpellE>gpadmin</span>
+<span class=SpellE>hadoop</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>37320 2014-08-11
+23:07 /user/<span class=SpellE>hawqtest</span>/<span class=SpellE>hdfssink</span>/SPXDocuments_Aug-11-2014T23-00-30.bin<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'>-<span
+class=SpellE><span class=GramE>rw</span></span>-r--r--<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>3 <span class=SpellE>gpadmin</span>
+<span class=SpellE>hadoop</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>36917 2014-08-11
+23:07 /user/<span class=SpellE>hawqtest</span>/<span class=SpellE>hdfssink</span>/SPXDocuments_Aug-11-2014T23-00-43.bin<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'>-<span
+class=SpellE><span class=GramE>rw</span></span>-r--r--<span
+style="mso-spacerun:yes">&nbsp;&nbsp; </span>3 <span class=SpellE>gpadmin</span>
+<span class=SpellE>hadoop</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>37176 2014-08-11
+23:07 /user/<span class=SpellE>hawqtest</span>/<span class=SpellE>hdfssink</span>/SPXDocuments_Aug-11-2014T23-00-56.bin<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'>…………<o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'>Let us look at the specifics
+of creating the sequence file.<span style="mso-spacerun:yes">&nbsp; </span>From
+the sequence diagram from we see that <span class=SpellE>DocumentGenerator</span>
+calls document method on the individual generators and assemble a collection of
+<span class=SpellE>DocumentRecord</span> POJOs. This list is passed to <span
+class=SpellE>SeqeunceFileIO</span> to persist the file. <span class=SpellE>SequenceFileIO</span>
+uses <span class=SpellE>DocumentRecordPOJO</span> as the value field while
+persisting the record in the file. For example;<o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span class=SpellE><span style='font-size:9.0pt;
+font-family:Monospace;mso-bidi-font-family:Monospace;color:#3366FF;background:
+lightgrey;mso-highlight:lightgrey'>SequenceFile</span><span style='font-size:
+9.0pt;font-family:Monospace;mso-bidi-font-family:Monospace;color:#3366FF'>.Writer</span></span><span
+style='font-size:9.0pt;font-family:Monospace;mso-bidi-font-family:Monospace;
+color:#3366FF'> writer = <span class=SpellE><span class=GramE><span
+style='background:lightgrey;mso-highlight:lightgrey'>SequenceFile</span>.createWriter</span></span><span
+class=GramE><u>(</u></span><span class=SpellE><u>fs</u></span><u>, <span
+class=SpellE>conf</span>, path, <span class=SpellE>Text.<b>class</b></span>, <span
+class=SpellE>DocumentRecord.<b>class</b></span>)</u>;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span class=GramE><b><span style='font-size:9.0pt;
+font-family:Monospace;mso-bidi-font-family:Monospace;color:#3366FF'>for</span></b></span><span
+style='font-size:9.0pt;font-family:Monospace;mso-bidi-font-family:Monospace;
+color:#3366FF'> (<span class=SpellE>DocumentRecord</span> record : records) {<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span style='font-size:9.0pt;font-family:Monospace;
+mso-bidi-font-family:Monospace;color:#3366FF'>Text key = <b>new</b> <span
+class=GramE>Text(</span><span class=SpellE>UUID.<i>randomUUID</i></span>().<span
+class=SpellE>toString</span>());<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:9.0pt;font-family:Monospace;
+mso-bidi-font-family:Monospace;color:#3366FF'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>writer.append</span></span>(key, record);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Monospace;
+mso-bidi-font-family:Monospace;color:#3366FF'>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:Monospace;
+mso-bidi-font-family:Monospace;color:black'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:Monospace;
+mso-bidi-font-family:Monospace;color:black'>Similarly while retrieving the data
+we use same Document POJO for reading value out of stream.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:Monospace;
+mso-bidi-font-family:Monospace;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span class=SpellE><span style='font-size:9.0pt;
+font-family:Monospace;mso-bidi-font-family:Monospace;color:#3366FF'>SequenceFile.Reader</span></span><span
+style='font-size:9.0pt;font-family:Monospace;mso-bidi-font-family:Monospace;
+color:#3366FF'> reader = <b>new</b> <span class=SpellE><u>SequenceFile.Reader</u></span><u>
+(<span class=SpellE>fs</span>, p, <span class=SpellE>conf</span>)</u>;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:9.0pt;font-family:Monospace;
+mso-bidi-font-family:Monospace;color:#3366FF'>Text key = (Text) <span
+class=SpellE><span class=GramE>ReflectionUtils.<i>newInstance</i></span></span><span
+class=GramE>(</span><span class=SpellE>reader.getKeyClass</span>(), <span
+class=SpellE>conf</span>);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span class=SpellE><span style='font-size:9.0pt;
+font-family:Monospace;mso-bidi-font-family:Monospace;color:#3366FF'>DocumentRecord</span></span><span
+style='font-size:9.0pt;font-family:Monospace;mso-bidi-font-family:Monospace;
+color:#3366FF'> <span class=SpellE>documentRecord</span> = (<span class=SpellE>DocumentRecord</span>)
+<span class=SpellE><span class=GramE>ReflectionUtils.<i>newInstance</i></span></span><span
+class=GramE>(</span><span class=SpellE>reader.getValueClass</span>(), <span
+class=SpellE>conf</span>);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span class=GramE><b><span style='font-size:9.0pt;
+font-family:Monospace;mso-bidi-font-family:Monospace;color:#3366FF'>try</span></b></span><span
+style='font-size:9.0pt;font-family:Monospace;mso-bidi-font-family:Monospace;
+color:#3366FF'> {<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:9.0pt;font-family:Monospace;
+mso-bidi-font-family:Monospace;color:#3366FF'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE><b>while</b></span> (<span class=SpellE>reader.next</span>(key, <span
+class=SpellE>documentRecord</span>)) {<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:9.0pt;font-family:Monospace;
+mso-bidi-font-family:Monospace;color:#3366FF'><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>returnData.add</span></span>(<span class=SpellE>documentRecord</span>);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:9.0pt;font-family:Monospace;
+mso-bidi-font-family:Monospace;color:#3366FF'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:9.0pt;font-family:Monospace;
+mso-bidi-font-family:Monospace;color:#3366FF'>} <span class=GramE><b>catch</b></span>
+(<span class=SpellE>EOFException</span> e) {<b><i>…</i></b>} <o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:11.0pt'>HAWQ PXF uses the same Document POJO while reading the
+data form external table. PXF uses reflection to set the fields on the POJO and
+require that we declare the fields as public. Also it supports only primitive
+types and arrays of primitive types. While declaring arrays we should hint the
+size of the field using the constructor and also need to use the size of the
+array while reading and the data out/in from the Stream.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:11.0pt'>For example, in our <span class=SpellE>DocumentRecord</span>
+looks as below<span class=GramE>;</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:9.0pt;font-family:Monospace;
+mso-bidi-font-family:Monospace;color:#3366FF;mso-bidi-font-weight:bold'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span class=GramE><span style='font-size:9.0pt;font-family:
+Monospace;mso-bidi-font-family:Monospace;color:#3366FF;mso-bidi-font-weight:
+bold'>public</span></span><span style='font-size:9.0pt;font-family:Monospace;
+mso-bidi-font-family:Monospace;color:#3366FF;mso-bidi-font-weight:bold'> void <span
+class=SpellE>readFields</span>(<span class=SpellE>DataInput</span> in) throws <span
+class=SpellE>IOException</span> {<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:9.0pt;font-family:Monospace;
+mso-bidi-font-family:Monospace;color:#3366FF;mso-bidi-font-weight:bold'><span
+style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>name</span> = <span class=SpellE>in.readUTF</span>();<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:9.0pt;font-family:Monospace;
+mso-bidi-font-family:Monospace;color:#3366FF;mso-bidi-font-weight:bold'><span
+style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>type</span> = <span class=SpellE>in.readUTF</span>();<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:9.0pt;font-family:Monospace;
+mso-bidi-font-family:Monospace;color:#3366FF;mso-bidi-font-weight:bold'><span
+style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>size</span> = <span class=SpellE>in.readInt</span>();<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:9.0pt;font-family:Monospace;
+mso-bidi-font-family:Monospace;color:#3366FF;mso-bidi-font-weight:bold'><span
+style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>content</span> = new byte[size];<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:9.0pt;font-family:Monospace;
+mso-bidi-font-family:Monospace;color:#3366FF;mso-bidi-font-weight:bold'><span
+style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>in.readFully</span></span>(content,0,size); <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:9.0pt;font-family:Monospace;
+mso-bidi-font-family:Monospace;color:#3366FF;mso-bidi-font-weight:bold'><span
+style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=GramE>size</span> = <span class=SpellE>content.length</span>;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:9.0pt;font-family:Monospace;
+mso-bidi-font-family:Monospace;color:#3366FF;mso-bidi-font-weight:bold'>}<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span class=GramE><span style='font-size:9.0pt;font-family:
+Monospace;mso-bidi-font-family:Monospace;color:#3366FF;mso-bidi-font-weight:
+bold'>public</span></span><span style='font-size:9.0pt;font-family:Monospace;
+mso-bidi-font-family:Monospace;color:#3366FF;mso-bidi-font-weight:bold'> void
+write(<span class=SpellE>DataOutput</span> out) throws <span class=SpellE>IOException</span>
+{<span style="mso-spacerun:yes">&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:9.0pt;font-family:Monospace;
+mso-bidi-font-family:Monospace;color:#3366FF;mso-bidi-font-weight:bold'><span
+style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>out.writeUTF</span></span>(name);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:9.0pt;font-family:Monospace;
+mso-bidi-font-family:Monospace;color:#3366FF;mso-bidi-font-weight:bold'><span
+style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>out.writeUTF</span></span>(type);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:9.0pt;font-family:Monospace;
+mso-bidi-font-family:Monospace;color:#3366FF;mso-bidi-font-weight:bold'><span
+style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>out.writeInt</span></span>(size);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:9.0pt;font-family:Monospace;
+mso-bidi-font-family:Monospace;color:#3366FF;mso-bidi-font-weight:bold'><span
+style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=SpellE><span class=GramE>out.write</span></span>(content, 0, size);<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;font-family:Monospace;
+mso-bidi-font-family:Monospace;color:#3366FF;mso-bidi-font-weight:bold'>}</span><span
+style='font-size:9.0pt;color:#3366FF;mso-bidi-font-weight:bold'><o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>By now we should have accumulated enough data in HDFS
+folder. So let us go ahead and create an external table in HAWQ. In order to
+create the table with the schema <span class=SpellE>DocumentRecord</span>, we
+should add the jar file to class path. So let us add the jar file that we built
+earlier to HAWQ class path.<span style="mso-spacerun:yes">&nbsp; </span>Copy
+the jar to /<span class=SpellE>usr</span>/lib/<span class=SpellE>gphd</span>/public
+folder.</p>
+
+<p class=MsoNormal>In my setup this looks as<span class=GramE>;</span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'>[<span
+class=SpellE><span class=GramE>pivhdsne:sink</span></span>]$ <span
+class=SpellE>ls</span> -l /<span class=SpellE>usr</span>/lib/<span
+class=SpellE>gphd</span>/<span class=SpellE>publicstage</span>/<o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=GramE><span style='font-size:9.0pt;color:#3366FF'>total</span></span><span
+style='font-size:9.0pt;color:#3366FF'> 36<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'>-<span
+class=SpellE><span class=GramE>rw</span></span>-r--r-- 1 <span class=SpellE>gpadmin</span>
+<span class=SpellE>gpadmin</span> 10096 Aug<span
+style="mso-spacerun:yes">&nbsp; </span>8 07:13
+CustomResolver-0.0.1-SNAPSHOT.jar<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'>-<span
+class=SpellE><span class=GramE>rw</span></span>-r--r-- 1 <span class=SpellE>gpadmin</span>
+<span class=SpellE>gpadmin</span> 22902 Aug 10 10:36 <b style='mso-bidi-font-weight:
+normal'>DocumentProducer-1.0.0-SNAPSHOT.jar</b><o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Also we should append this to hadoop-env.sh. In my setup it
+looks as<span class=GramE>;</span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'># Required for
+PXF with HDFS<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'>HADOOP_CLASSPATH=$HADOOP_CLASSPATH:\<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'>…………….<o:p></o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:9.0pt;color:#3366FF'>$GPHD_HOME/<span class=SpellE>publicstage</span>/DataProducer-1.0.0-SNAPSHOT.jar:\<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'>…………….<o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Once the jar is added to class path, restart the server. The
+process is documented in HAWQ PXF document. The link is provided in the
+references section.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Now, let us launch <span class=SpellE>psql</span> and type
+the below command.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span class=SpellE><span class=GramE><span style='font-size:
+9.0pt;color:#3366FF'>gpadmin</span></span></span><span style='font-size:9.0pt;
+color:#3366FF'>=# create external table <span class=SpellE>ext_hdfssink</span>(name
+text, type text, content <span class=SpellE>bytea</span>) <o:p></o:p></span></p>
+
+<p class=MsoNormal><span class=GramE><span style='font-size:9.0pt;color:#3366FF'>location</span></span><span
+style='font-size:9.0pt;color:#3366FF'>('pxf://pivhdsne:50070/user/hawqtest/hdfssink/*.bin?fragmenter=com.pivotal.pxf.plugins.hdfs.HdfsDataFragmenter&amp;accessor=com.pivotal.pxf.plugins.hdfs.SequenceFileAccessor&amp;resolver=com.pivotal.pxf.plugins.hdfs.WritableResolver&amp;data-schema=pivotal.io.samples.springxd.model.DocumentRecord')<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'><span
+style="mso-spacerun:yes">&nbsp;</span><span class=GramE>format</span> 'custom'
+(formatter='<span class=SpellE>pxfwritable_import</span>');<o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Verify the table<span class=GramE>;</span></p>
+
+<p class=MsoNormal><span class=SpellE><span class=GramE><span style='font-size:
+9.0pt;color:#3366FF'>gpadmin</span></span></span><span style='font-size:9.0pt;
+color:#3366FF'>=# \d+ <span class=SpellE>ext_hdfssink</span>;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>External table &quot;<span class=SpellE>public.ext_hdfssink</span>&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'><span
+style="mso-spacerun:yes">&nbsp;</span>Column<span
+style="mso-spacerun:yes">&nbsp; </span>| Type<span
+style="mso-spacerun:yes">&nbsp; </span>| Modifiers | Storage<span
+style="mso-spacerun:yes">&nbsp; </span>| Description <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'>---------+-------+-----------+----------+-------------<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'><span
+style="mso-spacerun:yes">&nbsp;</span><span class=GramE>name</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>| text<span
+style="mso-spacerun:yes">&nbsp; </span>|<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>| extended | <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'><span
+style="mso-spacerun:yes">&nbsp;</span><span class=GramE>type</span><span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>| text<span
+style="mso-spacerun:yes">&nbsp; </span>|<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>| extended | <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'><span
+style="mso-spacerun:yes">&nbsp;</span><span class=GramE>content</span> | <span
+class=SpellE>bytea</span> |<span
+style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>| extended | <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'>Type: readable<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'>Encoding: UTF8<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'>Format type:
+custom<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'>Format options:
+formatter '<span class=SpellE>pxfwritable_import</span>' <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:9.0pt;color:#3366FF'>External
+location: pxf://pivhdsne<span class=GramE>:50070</span>/user/sri/hdfssink/*.bin?fragmenter=com.pivotal.pxf.plugins.hdfs.HdfsDataFragmenter&amp;accessor=com.pivotal.pxf.plugins.hdfs.SequenceFileAccessor&amp;resolver=com.pivotal.pxf.plugins.hdfs.WritableResolver&amp;data-schema=pivotal.io.samples.springxd.model.DocumentRecord</span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>Select * from <span class=SpellE>ext_hdfssink</span>;</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_4" o:spid="_x0000_i1025" type="#_x0000_t75" style='width:539pt;
+ height:103pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="StreamingBinaryDataToHawq_files/image009.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=541 height=105
+src="StreamingBinaryDataToHawq_files/image010.png" v:shapes="Picture_x0020_4"><![endif]></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>References:</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><a href="http://www.pivotal.io/big-data/hadoop">http://www.pivotal.io/big-data/hadoop</a></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><a
+href="http://pivotalhd.docs.pivotal.io/doc/2010/PXFExternalTableandAPIReference.html#PXFExternalTableandAPIReference-ExternalTableExamples">http://pivotalhd.docs.pivotal.io/doc/2010/PXFExternalTableandAPIReference.html#PXFExternalTableandAPIReference-ExternalTableExamples</a></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><a
+href="http://pivotalhd.docs.pivotal.io/doc/2010/PXFInstallationandAdministration.html#PXFInstallationandAdministration-Recordkeyinkey-valuefileformats">http://pivotalhd.docs.pivotal.io/doc/2010/PXFInstallationandAdministration.html#PXFInstallationandAdministration-Recordkeyinkey-valuefileformats</a></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><a
+href="http://blog.pivotal.io/pivotal/products/json-on-hadoop-example-for-extending-hawq-data-formats-using-pivotal-extension-framework-pxf">http://blog.pivotal.io/pivotal/products/json-on-hadoop-example-for-extending-hawq-data-formats-using-pivotal-extension-framework-pxf</a></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
