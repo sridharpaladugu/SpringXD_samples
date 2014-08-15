@@ -37,38 +37,40 @@ We need to generate xml configuration for the Document generation sink module. F
 Copy the folders DocumentProdcerSink and DocumentHdfsSink. to  ${SPRINGXD_HOME}/xd/modules/sink.
 
 Once we have all the pieces in place, please restart spring xd and verify we have the modules deployed. For example;
-
+```
 XD>module info sink: DocumentHdfsSink
 Information about sink module DocumentHdfsSink:
 
-  Option Name         Description                               Default                 	Type
+  Option Name         Description                               Default                 Type
   ----------------------------------------------------------------------------------------------------
-  fsUri 		        Hadoop FS   URL      					              ${spring.hadoop.fsUri}  	String
-  hdfsDirectory   	hdfs file location                          /user/gpadmin             String
-  localDirectory  	location of the file in local file system  	/tmp                    	String
-  inputType         how this module should interpret payload  	<none>       		          MimeType
+  fsUri 	      Hadoop FS   URL      			${spring.hadoop.fsUri}	String
+  hdfsDirectory       hdfs file location                        /user/gpadmin           String
+  localDirectory      location of the file in local file system	/tmp                    String
+  inputType           how this module should interpret payload  <none>       		MimeType
 
 xd:>module info sink: DocumentProdcerSink
 Information about sink module DocumentProdcerSink:
 
-  Option Name         Description                                               Default     Type
+  Option Name         		Description                                           Default     Type
   -------------------------------------------------------------------------------------------------------
-  recordSize       		number of records in sequence file                       		200       Integer
-  dropboxLocation  	  location of the folder where the sequence file is stored  	/tmp		  String
-  inputType        		how this module should interpret messages it consumes     	<none>    MimeType
-
+  recordSize       	number of records in sequence file                       	200       Integer
+  dropboxLocation	location of the folder where the sequence file is stored  	/tmp	  String
+  inputType        	how this module should interpret messages it consumes     	<none>    MimeType
+```
 Next we create a stream and deploy to generate the files. The following command create a stream module in SpringXD, which runs the Document generation process with fixed interval 0f 20 seconds.
 
+```
 Xd>stream create --name generateSeqFiles --definition "trigger --fixedDelay=20 | DocumentProdcerSink --dropboxLocation=/home/gpadmin/TEST_STAGE --recordSize=10" --deploy
-
+```
 After this step we expect to see documents getting generated in the staging folde. In my case it is  “/home/gpadmin/TEST_STAGE” folder.
 
 Since our source is up and streaming files, let us create a stream to store files to HDFS. Please create the destination folder in HDFS before this step.
-
+```
 xd:>stream create --name storeDocumentsToHdfs --definition "file --dir=/home/gpadmin/TEST_STAGE/ --pattern=**/*.bin --fixedDelay=10 --ref=true | DocumentHdfsSink --localDirectory=/home/gpadmin/TEST_STAGE/ --hdfsDirectory=/user/hawqtest/hdfssink" --deploy
-
+```
 Once the stream deploys, we should see files in hdfs in the folder hdfs folder. In case it is “/user/hawqtest/hdfssink”.
 
+```
 [pivhdsne:sink]$ hdfs dfs -ls /user/hawqtest/hdfssink
 Found 81 items
 drwxr-xr-x   - gpadmin hadoop          0 2014-08-11 23:07 /user/hawqtest/hdfssink/*.bin
@@ -77,17 +79,20 @@ drwxr-xr-x   - gpadmin hadoop          0 2014-08-11 23:07 /user/hawqtest/hdfssin
 -rw-r--r--   3 gpadmin hadoop      36917 2014-08-11 23:07 /user/hawqtest/hdfssink/SPXDocuments_Aug-11-2014T23-00-43.bin
 -rw-r--r--   3 gpadmin hadoop      37176 2014-08-11 23:07 /user/hawqtest/hdfssink/SPXDocuments_Aug-11-2014T23-00-56.bin
 …………
-
+```
 Let us look at the specifics of creating the sequence file.  From the sequence diagram from we see that DocumentGenerator calls document method on the individual generators and assemble a collection of DocumentRecord POJOs. This list is passed to SeqeunceFileIO to persist the file. SequenceFileIO uses DocumentRecordPOJO as the value field while persisting the record in the file. For example;
 
+```
 SequenceFile.Writer writer = SequenceFile.createWriter(fs, conf, path, Text.class, DocumentRecord.class);
 for (DocumentRecord record : records) {
 Text key = new Text(UUID.randomUUID().toString());
 	writer.append(key, record);
 }
-		
+```
+
 Similarly while retrieving the data we use same Document POJO for reading value out of stream.
 
+```
 SequenceFile.Reader reader = new SequenceFile.Reader (fs, p, conf);
 Text key = (Text) ReflectionUtils.newInstance(reader.getKeyClass(), conf);
 DocumentRecord documentRecord = (DocumentRecord) ReflectionUtils.newInstance(reader.getValueClass(), conf);
@@ -96,11 +101,12 @@ try {
 		returnData.add(documentRecord);
 	}
 } catch (EOFException e) {…} 
+```
 
 HAWQ PXF uses the same Document POJO while reading the data form external table. PXF uses reflection to set the fields on the POJO and require that we declare the fields as public. Also it supports only primitive types and arrays of primitive types. While declaring arrays we should hint the size of the field using the constructor and also need to use the size of the array while reading and the data out/in from the Stream.
 
 For example, in our DocumentRecord looks as below;
-
+```
 public void readFields(DataInput in) throws IOException {
 		name = in.readUTF();
 		type = in.readUTF();
@@ -115,4 +121,41 @@ public void write(DataOutput out) throws IOException {
 		out.writeInt(size);
 		out.write(content, 0, size);
 }
+```
+By now we should have accumulated enough data in HDFS folder. So let us go ahead and create an external table in HAWQ. In order to create the table with the schema DocumentRecord, we should add the jar file to class path. So let us add the jar file that we built earlier to HAWQ class path.  Copy the jar to /usr/lib/gphd/public folder.
+In my setup this looks as;
+```
+[pivhdsne:sink]$ ls -l /usr/lib/gphd/publicstage/
+total 36
+-rw-r--r-- 1 gpadmin gpadmin 22902 Aug 10 10:36 DocumentProducer-1.0.0-SNAPSHOT.jar
+```
+Also we should append this to hadoop-env.sh. In my setup it looks as;
+```
+# Required for PXF with HDFS
+HADOOP_CLASSPATH=$HADOOP_CLASSPATH:\
+…………….
+$GPHD_HOME/publicstage/DataProducer-1.0.0-SNAPSHOT.jar:\
+…………….
+```
+Once the jar is added to class path, restart the server. The process is documented in HAWQ PXF document. The link is provided in the references section.
 
+Now, let us launch psql and type the below command.
+```
+gpadmin=# create external table ext_hdfssink(name text, type text, content bytea) 
+location('pxf://pivhdsne:50070/user/hawqtest/hdfssink/*.bin?fragmenter=com.pivotal.pxf.plugins.hdfs.HdfsDataFragmenter&accessor=com.pivotal.pxf.plugins.hdfs.SequenceFileAccessor&resolver=com.pivotal.pxf.plugins.hdfs.WritableResolver&data-schema=pivotal.io.samples.springxd.model.DocumentRecord')
+ format 'custom' (formatter='pxfwritable_import');
+
+Verify the table;
+gpadmin=# \d+ ext_hdfssink;
+         External table "public.ext_hdfssink"
+ Column  | Type  | Modifiers | Storage  | Description 
+---------+-------+-----------+----------+-------------
+ name    | text  |           | extended | 
+ type    | text  |           | extended | 
+ content | bytea |           | extended | 
+Type: readable
+Encoding: UTF8
+Format type: custom
+Format options: formatter 'pxfwritable_import' 
+External location: pxf://pivhdsne:50070/user/sri/hdfssink/*.bin?fragmenter=com.pivotal.pxf.plugins.hdfs.HdfsDataFragmenter&accessor=com.pivotal.pxf.plugins.hdfs.SequenceFileAccessor&resolver=com.pivotal.pxf.plugins.hdfs.WritableResolver&data-schema=pivotal.io.samples.springxd.model.DocumentRecord
+```
