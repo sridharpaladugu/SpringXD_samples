@@ -6,7 +6,6 @@ HAWQ PXF feature let us access information from HDFS and access the data in ANSI
 To demonstrate the scenario Let us generate some sequence files, store them in HDFS and query the via HAWQ external table feature. The flow we are going to use is as below;
 
 ####
-The following figure shows the process flow.
 ![alt text](https://github.com/sridharpaladugu/SpringXD_Pivotal_hadoop/blob/master/SpringXD_HAWQ_SEQFILE_DEMO/StreamingBinaryDataToHawq_files/image004.png "Logo")
 
 ####As shown in the diagram the process is broken 3 steps; data producer, data ingestion, query step. 
@@ -17,4 +16,17 @@ Flow 1, usually an external source sending the files to a file store. To simulat
 
 Flow2 is another SpringXD stream which uses out of box File polling process and a custom Sink to store files to HDFS. This process polls the folder for fixed interval time and if there is any new file, moves to HDFS.
 The final step is creating an external table in HAWQ to query the data in client Application.
-The code for this sample can be downloaded at
+
+The Document generation process flow generates preconfigured number pdf, excel, and image records in a sequence file. To keep things simple I have a Driver class which instantiate the 3 beans and generate number of specified document records.  Each of the service call result in a Document POJO with text attributes  ‘name, type, and a byte[] representing the document. The high level flow is as below;
+
+####
+![alt text](https://github.com/sridharpaladugu/SpringXD_Pivotal_hadoop/blob/master/SpringXD_HAWQ_SEQFILE_DEMO/StreamingBinaryDataToHawq_files/image007.png "Logo")
+
+####
+The code base is organized in to folder structure as;
+  1. DocumentProducer; floder contain Spring Maven applciation
+  2. DocumentProdcerSink, and DocumentHdfsSink folders contain SpringXD module definitions, 
+  3. DocumentGeneratorStreamDefs folder contain HAWQ table definition and SpringXD streams.
+
+Clone and import the DocumentProducer project in to Eclipse with import existing maven projects option. 
+
