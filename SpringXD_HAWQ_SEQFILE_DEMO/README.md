@@ -159,3 +159,14 @@ Format type: custom
 Format options: formatter 'pxfwritable_import' 
 External location: pxf://pivhdsne:50070/user/sri/hdfssink/*.bin?fragmenter=com.pivotal.pxf.plugins.hdfs.HdfsDataFragmenter&accessor=com.pivotal.pxf.plugins.hdfs.SequenceFileAccessor&resolver=com.pivotal.pxf.plugins.hdfs.WritableResolver&data-schema=pivotal.io.samples.springxd.model.DocumentRecord
 ```
+Once the table is checked out, let us query the table. I use pgadmin client to do so;
+
+`Select * from ext_hdfssink;`
+
+![alt Text](https://github.com/sridharpaladugu/SpringXD_Pivotal_hadoop/blob/master/SpringXD_HAWQ_SEQFILE_DEMO/StreamingBinaryDataToHawq_files/image010.png "Logo")
+
+To stop the Stream;
+```
+xd>stream undeploy storeDocumentsToHdfs
+xd>stream undeploy DocumentHdfsSink
+```
